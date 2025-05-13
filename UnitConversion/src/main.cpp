@@ -101,7 +101,57 @@ void miles_to_inches()
 	std::cout << num_miles << " miles is: " << num_miles * 63360 << " inches" << '\n';
 }
 
-void main()
+void cm_to_feet()
+{
+	std::cout << "Enter a number (in cm): " << '\n'; // Prompts user to enter number.
+
+	double num_cm{};
+	std::cin >> num_cm;
+
+	std::cout << num_cm << " centimeters is: " << num_cm * 0.0328084 << " feet" << '\n';
+}
+
+void inches_to_feet()
+{
+	std::cout << "Enter a number (in inches): " << '\n'; // Prompts user to enter number.
+
+	double num_inches{};
+	std::cin >> num_inches;
+
+	std::cout << num_inches << " inches is: " << num_inches * 0.08333333 << " feet" << '\n';
+}
+
+void feet_to_feet()
+{
+	std::cout << "Enter a number (in feet): " << '\n'; // Prompts user to enter number.
+
+	double num_feet{};
+	std::cin >> num_feet;
+
+	std::cout << num_feet << " feet is: " << num_feet << " feet" << '\n';
+}
+
+void yards_to_feet()
+{
+	std::cout << "Enter a number (in yards): " << '\n'; // Prompts user to enter number.
+
+	double num_yards{};
+	std::cin >> num_yards;
+
+	std::cout << num_yards << " yards is: " << num_yards * 3 << " feet" << '\n';
+}
+
+void miles_to_feet()
+{
+	std::cout << "Enter a number (in miles): " << '\n'; // Prompts user to enter number.
+
+	double num_miles{};
+	std::cin >> num_miles;
+
+	std::cout << num_miles << " miles is: " << num_miles * 5280 << " feet" << '\n';
+}
+
+int main()
 {
 	std::cout << "What unit of measurement would you like to convert? Select a number." << '\n';
 	std::cout << "	1) centimeters" << '\n';
@@ -163,4 +213,26 @@ void main()
 	{
 		miles_to_inches();
 	}
+	if (selection1 == 1 and selection2 == 3) // If user chooses cm to feet
+	{
+		cm_to_feet();
+	}
+	if (selection1 == 2 and selection2 == 3) // If user chooses inches to feet
+	{
+		inches_to_feet();
+	}
+	if (selection1 == 3 and selection2 == 3) // If user chooses feet to feet
+	{
+		feet_to_feet();
+	}
+	if (selection1 == 4 and selection2 == 3) // If user chooses yards to feet
+	{
+		yards_to_feet();
+	}
+	if (selection1 == 5 and selection2 == 3) // If user chooses miles to feet
+	{
+		miles_to_feet();
+	}
+
+	return 0;
 }
