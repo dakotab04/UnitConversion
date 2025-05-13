@@ -201,6 +201,56 @@ void miles_to_yards()
 	std::cout << num_miles << " miles is: " << num_miles * 1760 << " yards" << '\n';
 }
 
+void cm_to_miles()
+{
+	std::cout << "Enter a number (in cm): " << '\n'; // Prompts user to enter number.
+
+	double num_cm{};
+	std::cin >> num_cm;
+
+	std::cout << num_cm << " centimeters is: " << num_cm * 0.00000621 << " miles" << '\n';
+}
+
+void inches_to_miles()
+{
+	std::cout << "Enter a number (in inches): " << '\n'; // Prompts user to enter number.
+
+	double num_inches{};
+	std::cin >> num_inches;
+
+	std::cout << num_inches << " inches is: " << num_inches * 0.00001578 << " miles" << '\n';
+}
+
+void feet_to_miles()
+{
+	std::cout << "Enter a number (in feet): " << '\n'; // Prompts user to enter number.
+
+	double num_feet{};
+	std::cin >> num_feet;
+
+	std::cout << num_feet << " feet is: " << num_feet * 0.00018939 << " miles" << '\n';
+}
+
+void yards_to_miles()
+{
+	std::cout << "Enter a number (in yards): " << '\n'; // Prompts user to enter number.
+
+	double num_yards{};
+	std::cin >> num_yards;
+
+	std::cout << num_yards << " yards is: " << num_yards * 0.00056818 << " miles" << '\n';
+}
+
+void miles_to_miles()
+{
+	std::cout << "Enter a number (in miles): " << '\n'; // Prompts user to enter number.
+
+	double num_miles{};
+	std::cin >> num_miles;
+
+	std::cout << num_miles << " miles is: " << num_miles << " miles" << '\n';
+}
+
 int main()
 {
 	std::cout << "What unit of measurement would you like to convert? Select a number." << '\n';
@@ -212,7 +262,7 @@ int main()
 
 	int selection1{}; // Main unit of measurement
 	std::cin >> selection1;
-
+	 
 	std::cout << "What unit of measurement would you like your number to be converted to? Select a number." << '\n';
 	std::cout << "	1) centimeters" << '\n';
 	std::cout << "	2) inches" << '\n';
@@ -302,6 +352,26 @@ int main()
 	if (selection1 == 5 and selection2 == 4) // If user chooses miles to yards
 	{
 		miles_to_yards();
+	}
+	if (selection1 == 1 and selection2 == 5) // If user chooses cm to miles
+	{
+		cm_to_miles();
+	}
+	if (selection1 == 2 and selection2 == 5) // If user chooses inches to miles
+	{
+		inches_to_miles();
+	}
+	if (selection1 == 3 and selection2 == 5) // If user chooses feet to miles
+	{
+		feet_to_miles();
+	}
+	if (selection1 == 4 and selection2 == 5) // If user chooses yards to miles
+	{
+		yards_to_miles();
+	}
+	if (selection1 == 5 and selection2 == 5) // If user chooses miles to miles
+	{
+		miles_to_miles();
 	}
 
 	return 0;
