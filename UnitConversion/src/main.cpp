@@ -151,6 +151,56 @@ void miles_to_feet()
 	std::cout << num_miles << " miles is: " << num_miles * 5280 << " feet" << '\n';
 }
 
+void cm_to_yards()
+{
+	std::cout << "Enter a number (in cm): " << '\n'; // Prompts user to enter number.
+
+	double num_cm{};
+	std::cin >> num_cm;
+
+	std::cout << num_cm << " centimeters is: " << num_cm * 0.01093613 << " yards" << '\n';
+}
+
+void inches_to_yards()
+{
+	std::cout << "Enter a number (in inches): " << '\n'; // Prompts user to enter number.
+
+	double num_inches{};
+	std::cin >> num_inches;
+
+	std::cout << num_inches << " inches is: " << num_inches * 0.02777778 << " yards" << '\n';
+}
+
+void feet_to_yards()
+{
+	std::cout << "Enter a number (in feet): " << '\n'; // Prompts user to enter number.
+
+	double num_feet{};
+	std::cin >> num_feet;
+
+	std::cout << num_feet << " feet is: " << num_feet * 0.33333333 << " yards" << '\n';
+}
+
+void yards_to_yards()
+{
+	std::cout << "Enter a number (in yards): " << '\n'; // Prompts user to enter number.
+
+	double num_yards{};
+	std::cin >> num_yards;
+
+	std::cout << num_yards << " yards is: " << num_yards << " yards" << '\n';
+}
+
+void miles_to_yards()
+{
+	std::cout << "Enter a number (in miles): " << '\n'; // Prompts user to enter number.
+
+	double num_miles{};
+	std::cin >> num_miles;
+
+	std::cout << num_miles << " miles is: " << num_miles * 1760 << " yards" << '\n';
+}
+
 int main()
 {
 	std::cout << "What unit of measurement would you like to convert? Select a number." << '\n';
@@ -232,6 +282,26 @@ int main()
 	if (selection1 == 5 and selection2 == 3) // If user chooses miles to feet
 	{
 		miles_to_feet();
+	}
+	if (selection1 == 1 and selection2 == 4) // If user chooses cm to yards
+	{
+		cm_to_yards();
+	}
+	if (selection1 == 2 and selection2 == 4) // If user chooses inches to yards
+	{
+		inches_to_yards();
+	}
+	if (selection1 == 3 and selection2 == 4) // If user chooses feet to yards
+	{
+		feet_to_yards();
+	}
+	if (selection1 == 4 and selection2 == 4) // If user chooses yards to yards
+	{
+		yards_to_yards();
+	}
+	if (selection1 == 5 and selection2 == 4) // If user chooses miles to yards
+	{
+		miles_to_yards();
 	}
 
 	return 0;
