@@ -7,7 +7,6 @@ void cm_to_cm(double num_cm)
 
 void inches_to_cm(double num_inches)
 {
-	// Since 1 inch is 2.54 cm, we convert using num * 2.54 and return to user.
 	std::cout << num_inches << " inches is: " << num_inches * 2.54 << " centimeters" << '\n';
 }
 
@@ -130,7 +129,7 @@ void prompt(int selection1, int selection2)
 {
 	std::cout << "Enter a number of your specified unit.\n"; // Prompts user to enter number.
 
-	double num_unit{};
+	double num_unit{}; // Initializes number of unit(s).
 	std::cin >> num_unit;
 
 	if (selection1 == 1 and selection2 == 1)
@@ -257,7 +256,7 @@ void selection()
 	int selection2{}; // What unit is being converted into
 	std::cin >> selection2;
 
-	prompt(selection1, selection2); // Calls upon choice function to decide what units to convert.
+	prompt(selection1, selection2); // Calls upon prompt function to decide what units to convert.
 }
 
 int main()
